@@ -14,7 +14,7 @@ function Youku() {
 
 Youku.prototype.parseUrl = function (url) {
   var match = url.match(
-    /(?:(?:embed|sid)\/|v_show\/id_|VideoIDS=)([a-zA-Z0-9]+)/
+    /(?:(?:embed|sid)\/|(?:v_show|video)\/id_|VideoIDS=)([a-zA-Z0-9]+)/
   );
   return match ? match[1] : undefined;
 };
